@@ -1,0 +1,381 @@
+body{
+  background-color: #ede9da;
+  font-family: "Bitter", serif;
+  margin: 0;
+}
+
+/*jusxtapose*/
+.media-title {
+  text-align: left;
+  padding: 10px 250px 10px;
+  font-family: "IBM Plex Serif", serif;
+}
+
+.media-title h2{
+  color: #2E5984;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 80px 5px 10px, 80px
+}
+.media-title h3{
+  color: #2E5984;
+  font-family: "Poppins";
+  font-weight: semi-bold;
+  font-size: 1.8rem;
+  padding: 80px 5px 10px, 80px
+}
+
+.media-title a {
+  display: block;
+  text-align: center;
+  margin-bottom: 0; 
+}
+
+.media-title h5 {
+  color: grey;
+  font-weight: 100;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  align-self: center; 
+  text-align: left; 
+}
+
+.media-title a,
+.media-title h5 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iframe-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px 40px;
+}
+
+.juxtapose {
+  max-width: 1000px;
+  width: 100%;
+  height: 678px;
+}
+
+
+/* for pull quote section*/
+.pull-quote {
+  text-align: center;
+  padding: 10px 250px 10px; 
+}
+
+.pull-quote h4 {
+  color: #2E5984;
+    font-family: "Poppins";
+  font-weight: semi-bold;
+  font-weight: 300;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.pull-quote h3 {
+  color: grey;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+/* for header bar */
+
+.header-bar {
+  background-color: mintcream;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: px 0;
+  margin-bottom: 20px; 
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px 30px 30px;
+}
+
+.title_byline {
+ text-align: left;
+padding: 10px 250px 10px;  
+color: #2E5984;
+font-family: "Poppins";
+  font-style: bold;
+}
+
+.title_byline h1{
+ font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+ }
+
+.title_byline h6{
+ text-align: left; 
+ color: black;
+ font-family: "IBM Plex Serif", serif;
+}
+
+.title_byline h5{
+ text-align: left; 
+ color: grey;
+  font-weight: 100;
+  font-size: 1rem;
+  margin-top: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+}
+
+
+
+
+.site-title span1 {
+  color: #800000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 3rem;
+}
+.site-title span2 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+
+
+/* to make the article and ad next to each other match size for screens*/
+
+  .article-ad-section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+      background-color: white;
+      padding: 20px;
+      align-items: flex-start; 
+    }
+    
+    .article-type {
+      flex: 1;
+      min-width: 250px;
+      padding: 10px 250px 10px; 
+      font-family: "IBM Plex Serif", serif;
+    }
+    
+    .article-ad {
+      width: 200px;
+
+    }
+    
+    .article-ad img {
+      width: auto;
+      height: auto; 
+      display: block;
+
+
+  /* fonts*/
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+  .ibm-plex-serif-thin {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.ibm-plex-serif-extralight {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.ibm-plex-serif-light {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ibm-plex-serif-regular {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-serif-medium {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ibm-plex-serif-semibold {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ibm-plex-serif-bold {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ibm-plex-serif-thin-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.ibm-plex-serif-extralight-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.ibm-plex-serif-light-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ibm-plex-serif-regular-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ibm-plex-serif-medium-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ibm-plex-serif-semibold-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.ibm-plex-serif-bold-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+    
