@@ -1,0 +1,78 @@
+---
+title: "Data Notebook"
+format: html
+editor: visual
+---
+
+```{r}
+#A - Load libraries
+library(tidyverse)
+library(rio)
+library(janitor)
+library(dplyr)
+
+```
+
+```{r}
+#B - Import the data
+
+CFPB <- rio::import("complaints-2025-04-29_20_45.csv")
+
+CFPB <- clean_names(CFPB)
+```
+
+```{r}
+# 1. Complaints by Month
+# Convert date to proper format and extract month
+CFPB <- CFPB %>%
+  mutate(date_received = mdy(date_received),
+         month = floor_date(date_received, "month"))
+
+# Group by month and count complaints
+complaints_by_month <- CFPB %>%
+  group_by(month) %>%
+  summarise(complaint_count = n()) %>%
+  arrange(month)
+
+# View the monthly complaints
+print(complaints_by_month)
+```
+
+```{r}
+complaints_by_state <- CFPB %>%
+  group_by(state) %>%
+  summarise(complaint_count = n()) %>%
+  arrange(desc(complaint_count))
+
+# View the state complaints
+print(complaints_by_state)
+```
+
+```{r}
+write.csv(complaints_by_state, "complaints_by_state.csv", row.names = FALSE)
+write.csv(complaints_by_month, "complaints_by_month.csv", row.names = FALSE)
+```
+
+```{r}
+
+
+# Group products into the specified categories
+complaints_grouped <- CFPB %>%
+  mutate(product_category = case_when(
+    grepl("student loan", product, ignore.case = TRUE) ~ "Student loan",
+    grepl("credit reporting|personal consumer report", product, ignore.case = TRUE) ~ "Credit reporting or other personal consumer reports",
+    grepl("debt collection", product, ignore.case = TRUE) ~ "Debt collection",
+    TRUE ~ "Other"
+  ))
+
+# Check the distribution
+product_summary <- complaints_grouped %>%
+  group_by(product_category) %>%
+  summarize(count = n()) %>%
+  arrange(desc(count))
+
+# View the summary
+print(product_summary)
+
+write.csv(product_summary, "complaints_by_type.csv", row.names = FALSE)
+
