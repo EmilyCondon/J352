@@ -1,0 +1,646 @@
+body {
+  background-color:#bcd2e8;
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 20%;
+}
+
+.text p{color:black;
+  font-family: "Bitter";
+  font-weight: 250;
+  margin: 15px 20px 15px 20px;
+}
+
+.text h1 {color:#800000;
+  font-family: "Bitter";
+  font-weight: 250;
+  margin: 15px 20px 15px 20px;
+  font-size: 1rem;
+}
+
+.head h1{color:#800000;
+  font-weight: 900;
+  font-family: "Anton";
+  padding: 30px 30px 30px 30px;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.head h2{color:#800000;
+  font-weight: 600;
+  font-family: "Anton";
+  padding: 30px 30px 30px 30px;
+  text-align: center;
+  font-size: 4rem;
+}
+
+h2{color:#800000;
+  font-weight: 400;
+  font-family: "Anton";
+  font-size: 2.2rem;
+}
+h4{color:#000000;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.instagram-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.grid-x h5 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  color:black;
+  font-weight: 200;
+  font-family: "Anton";
+  text-align: center;
+  padding: 30px 30px 30px 30px;
+  text-align: center;
+  font-size: 3rem
+}
+
+.grid-x h6 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  color:black;
+  font-weight: 80;
+  font-family: "Anton";
+  text-align: center;
+  padding: 30px 30px 30px 30px;
+  text-align: center;
+  font-size: 2rem
+}
+
+.grid-x h7 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  color:black;
+  font-weight: 100;
+  font-family: "Anton";
+  text-align: center;
+  padding: 30px 30px 30px 30px;
+  text-align: center;
+  font-size: 2rem
+}
+
+.grid-x h8 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  color:black;
+  font-weight: 100;
+  font-family: "Bitter";
+  text-align: center;
+  padding: 30px 30px 30px 30px;
+  text-align: center;
+  font-size: 1rem
+}
+
+figcaption{color:#C00000;
+  font-weight: 100;
+   font-size: .8rem;
+margin-top: -16px;
+}
+
+
+ul{color:#000000;
+  font-weight: 300;
+}
+
+a{
+  color:#000000;
+}
+
+a:hover{
+  color:#800000;
+}
+
+table{
+  color:#000000;
+}
+
+td{
+  color:#000000
+}
+.subhead{
+  color: #800000;
+  font-weight: 500;
+  line-height: 1.5rem
+}
+
+.leftimage {
+margin-right: 50px;
+}
+
+
+
+
+.top-bar-container {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .top-bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Top section with logo and search */
+  .top-bar-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .logo {
+    font-family: 'Anton', sans-serif;
+    font-size: 28px;
+    color: #0c2340;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .logo span {
+    color: #800000;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+  }
+  
+  .search-bar button {
+    background: #800000;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  /* Bottom section with navigation */
+  .top-bar-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links a {
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    background-color: #f5f5f5;
+    color: #800000;
+  }
+  
+  .current-page {
+    border-bottom: 3px solid #800000;
+  }
+  
+  /* Responsive design 
+  @media screen and (max-width: 768px) {
+    .top-bar-main {
+      padding: 10px;
+    }
+    
+    .logo {
+      font-size: 22px;
+    }
+    
+    .search-bar {
+      display: none;
+    }
+    
+    .mobile-menu-btn {
+      display: block;
+    }
+    
+    .top-bar-nav {
+      flex-direction: column;
+      padding: 0;
+    }
+    
+    .nav-links {
+      flex-direction: column;
+      display: none;
+    }
+    
+    .nav-links.active {
+      display: flex;
+    }
+    
+    .nav-links a {
+      padding: 12px 15px;
+      border-bottom: 1px solid #eaeaea;
+    }
+    
+    .dropdown-content {
+      position: static;
+      box-shadow: none;
+      background-color: #f5f5f5;
+    }
+  }*/
+
+ /* Grid container margins */
+.grid-container {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Reset all margins and padding first */
+.grid-x {
+  margin: 0;
+}
+
+/* Consistent cell styling */
+.cell {
+  padding: 15px;
+  margin: 0;
+}
+
+/* Add border and background to make the grid cells more defined */
+.grid-x > .cell {
+  background-color: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+/* Add spacing only between specific elements if needed */
+.grid-container > .grid-x:first-child {
+  margin-bottom: 20px; /* Only add bottom margin to the first row if desired */
+}
+
+/* Add some hover effects to make interactive elements more engaging */
+.grid-x > .cell:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Make sure images fit properly in their containers */
+.cell img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+}
+
+/* Styling for headings inside cells */
+.cell h5 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Adjust link styling */
+.cell a {
+  color: #333;
+  text-decoration: none;
+}
+
+.cell a:hover {
+  color: #0078a0;
+}
+
+
+/*Roster styles*/
+
+body {
+  background-color: #bcd2e8;
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  color: #800000;
+  font-family: "Anton", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: white;
+}
+
+.roster-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.roster-table th {
+  background-color: #0c2340;
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  padding: 15px;
+  text-align: left;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.roster-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  font-family: "Bitter", serif;
+  font-weight: 300;
+}
+
+.roster-table tbody tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.roster-table tbody tr:hover {
+  background-color: #eaf0f7;
+}
+
+/* Make the Season Goals column centered */
+.roster-table th:nth-child(2),
+.roster-table td:nth-child(2) {
+  text-align: center;
+}
+
+/* Make the Year column centered */
+.roster-table th:nth-child(4),
+.roster-table td:nth-child(4) {
+  text-align: center;
+}
+
+.roster-link {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 30px auto;
+  display: block;
+  color: #800000;
+}
+
+.roster-link a {
+  color: #800000;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.roster-link a:hover {
+  color: #0c2340;
+}
+
+/* Photo Gallery Styling */
+.photo-gallery-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.photo-item {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.photo-item img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.photo-caption {
+  margin-top: 10px;
+  font-family: "Bitter", serif;
+  font-size: 1rem;
+  text-align: center;
+  color: #333;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Fix for h8 elements */
+h8 {
+  display: block;
+  text-align: center;
+  margin: 10px auto 30px;
+  font-family: "Bitter", serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: #333;
+  max-width: 90%;
+}
+
+/* Make sure grid cells are centered */
+.grid-container .grid-x {
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.grid-container .cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  border: none;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.video-container video {
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.video-caption {
+  margin-top: 15px;
+  font-family: "Bitter", serif;
+  font-size: 1rem;
+  text-align: center;
+  color: #333;
+  font-style: italic;
+}
+
+/* Season Stats Styling */
+.season-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.teams-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.team-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 30px;
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #800000;
+}
+
+.team-name {
+  font-family: "Anton", sans-serif;
+  font-size: 2.5rem;
+  color: #800000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.team-stats {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.team-stats li {
+  font-family: "Bitter", serif;
+  padding: 12px 0;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-stats li:last-child {
+  border-bottom: none;
+}
+
+.stat-label {
+  font-weight: 600;
+  color: #0c2340;
+}
+
+.stat-value {
+  font-weight: 400;
+}
+
+.team-description {
+  margin-top: 20px;
+  font-family: "Bitter", serif;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.season-intro {
+  font-family: "Bitter", serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 30px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.season-title {
+  font-family: "Anton", sans-serif;
+  font-size: 3rem;
+  color: #800000;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.team-social {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.team-social a {
+  color: #0c2340;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.team-social a:hover {
+  color: #800000;
+}
+
+.league-position {
+  font-family: "Anton", sans-serif;
+  font-size: 1.5rem;
+  padding: 10px 0;
+  text-align: center;
+  color: #0c2340;
+  margin-top: 15px;
+}
+
+.team-record {
+  background-color: #f5f5f5;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+}
+
+</style>
