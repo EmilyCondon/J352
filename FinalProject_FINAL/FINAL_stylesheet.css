@@ -238,8 +238,11 @@ margin-right: 50px;
   
  Responsive design 
   @media screen and (max-width: 768px) {
-      padding: 10px;
-    }
+  .top-bar-main {
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
     @media screen and (max-width: 768px) {
   .head h1 {
