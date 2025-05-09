@@ -3,7 +3,8 @@ body {
   font-family: "Bitter", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  margin: 20%;
+  margin: 0;
+  padding: 0;
 }
 
 .text p{color:black;
@@ -235,11 +236,16 @@ margin-right: 50px;
     border-bottom: 3px solid #800000;
   }
   
-  /* Responsive design 
+ Responsive design 
   @media screen and (max-width: 768px) {
-    .top-bar-main {
       padding: 10px;
     }
+
+    @media screen and (max-width: 768px) {
+  .head h1 {
+    font-size: 2.5rem;
+  }
+}
     
     .logo {
       font-size: 22px;
@@ -277,7 +283,7 @@ margin-right: 50px;
       box-shadow: none;
       background-color: #f5f5f5;
     }
-  }*/
+  }
 
  /* Grid container margins */
 .grid-container {
