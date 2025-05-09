@@ -211,6 +211,8 @@ margin-right: 50px;
   .nav-links {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
   
   .nav-links li {
@@ -236,59 +238,7 @@ margin-right: 50px;
     border-bottom: 3px solid #800000;
   }
   
- Responsive design 
-  @media screen and (max-width: 768px) {
-  .top-bar-main {
-    padding: 10px;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-    @media screen and (max-width: 768px) {
-  .head h1 {
-    font-size: 2.5rem;
-  }
-}
-    
-    .logo {
-      font-size: 22px;
-    }
-    
-    .search-bar {
-      display: none;
-    }
-    
-    .mobile-menu-btn {
-      display: block;
-    }
-    
-    .top-bar-nav {
-      flex-direction: column;
-      padding: 0;
-    }
-    
-    .nav-links {
-      flex-direction: column;
-      display: none;
-    }
-    
-    .nav-links.active {
-      display: flex;
-    }
-    
-    .nav-links a {
-      padding: 12px 15px;
-      border-bottom: 1px solid #eaeaea;
-    }
-    
-    .dropdown-content {
-      position: static;
-      box-shadow: none;
-      background-color: #f5f5f5;
-    }
-  }
-
- /* Grid container margins */
+/* Grid container margins */
 .grid-container {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -652,4 +602,141 @@ h8 {
   font-weight: 600;
 }
 
-</style>
+/* MOBILE RESPONSIVE STYLES */
+/* Make sure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Fix for responsive tables */
+.table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Media query for tablets and mobile devices */
+@media screen and (max-width: 768px) {
+  /* Top bar modifications for mobile */
+  .top-bar-main {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .logo {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  /* Make the navigation stack vertically on mobile */
+  .top-bar-nav {
+    width: 100%;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: flex !important; /* Force display */
+  }
+  
+  .nav-links li {
+    width: 100%;
+  }
+  
+  .nav-links a {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eaeaea;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Header text size reduction for mobile */
+  .head h1 {
+    font-size: 2.5rem;
+    padding: 15px;
+  }
+  
+  .head h2 {
+    font-size: 2rem;
+    padding: 15px;
+  }
+  
+  /* Grid adjustments for mobile */
+  .grid-x h5 {
+    font-size: 1.8rem;
+    padding: 15px;
+  }
+  
+  .grid-x h6 {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+  
+  /* Fix Foundation grid layout on mobile */
+  .grid-x {
+    display: block;
+  }
+  
+  .large-8, .medium-8, .small-12,
+  .large-4, .medium-4,
+  .large-6, .medium-6 {
+    width: 100%;
+  }
+  
+  /* Cell styling for better mobile appearance */
+  .cell {
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  
+  /* Season cards stack on mobile */
+  .team-card {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .search-bar {
+    display: none;
+  }
+}
+
+/* Even smaller screen breakpoint for phones */
+@media screen and (max-width: 480px) {
+  .head h1 {
+    font-size: 2rem;
+    padding: 10px;
+  }
+  
+  .head h2 {
+    font-size: 1.6rem;
+    padding: 10px;
+  }
+  
+  .grid-x h5 {
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+  
+  .grid-x h6 {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  
+  /* More compact padding for mobile */
+  .grid-container {
+    padding: 0 10px;
+  }
+  
+  /* Adjust roster table for mobile */
+  .roster-table {
+    font-size: 0.9rem;
+  }
+  
+  .roster-table th,
+  .roster-table td {
+    padding: 8px;
+  }
+}
