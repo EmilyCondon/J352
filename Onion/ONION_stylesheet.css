@@ -1,0 +1,122 @@
+/* Add these optimized styles to your ONION_stylesheet.css file */
+
+/* Photo credit styling - consistent for all images */
+.photo-credit {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: grey;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Main image (first image) */
+.image-wrapper {
+  margin: 20px auto 30px;
+  max-width: 800px;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive containers for side-by-side content */
+.responsive-container {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+/* Left-aligned image with text to the right */
+.image-left {
+  float: left;
+  width: 40%;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+/* Right-aligned image with text to the left */
+.image-right {
+  float: right;
+  width: 40%;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.image-left img, .image-right img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Text that appears beside images */
+.text-beside-image {
+  overflow: hidden;
+}
+
+/* Centered image */
+.image-center-wrapper {
+  text-align: center;
+  margin: 30px auto;
+  max-width: 70%;
+}
+
+.center-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 767px) {
+  .image-left, .image-right {
+    float: none;
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+  
+  .image-center-wrapper {
+    max-width: 100%;
+  }
+  
+  .pull-quote {
+    padding: 10px 30px;
+  }
+  
+  .article-type {
+    padding: 10px 30px;
+  }
+  
+  .title_byline {
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .image-left, .image-right {
+    width: 50%;
+  }
+  
+  .pull-quote {
+    padding: 10px 100px;
+  }
+  
+  .article-type {
+    padding: 10px 100px;
+  }
+  
+  .title_byline {
+    padding: 10px 100px;
+  }
+}
